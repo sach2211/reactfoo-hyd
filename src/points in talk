@@ -1,0 +1,8 @@
+
+
+1/ Make product tile a pure component.
+
+2/ Arrow fns as props to component => then even pure component fails.
+
+3/ Keys to List of Shortlisted Elements. Index vs random numbers vs unique numbers.
+

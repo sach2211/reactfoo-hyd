@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="145.98286"
+   height="353.74698"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.47pre4 r22446"
+   version="1.0"
+   sodipodi:docname="red_wine_glass.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="C:\Dokumente und Einstellungen\spktkpkt\Desktop\wine.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.6"
+     inkscape:cx="371.92629"
+     inkscape:cy="219.22518"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer4"
+     width="744.09449px"
+     height="1052.3622px"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     units="mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:grid-points="true"
+     gridtolerance="6.7"
+     inkscape:window-width="1280"
+     inkscape:window-height="774"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     showgrid="false"
+     inkscape:window-maximized="1" />
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="wein"
+     id="layer4"
+     inkscape:groupmode="layer"
+     style="display:inline"
+     transform="translate(-239.45682,-327.00054)">
+    <path
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.01591873px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 241.52845,327.00054 c 0,0 4.04425,18.24689 3.84253,39.19384 -0.20173,20.94694 -5.91416,25.12852 -5.91416,50.01977 1e-5,44.20947 30.27927,65.08919 73.00814,65.08918 41.63965,-2e-5 72.97471,-20.87972 72.97472,-65.08918 -1e-5,-24.89123 -5.67904,-29.0728 -5.88075,-50.01976 -0.20175,-20.94697 3.87595,-39.19384 3.87595,-39.19384 l -141.90643,0 z m 3.97619,3.5084 133.88723,0 c 1e-5,-10e-6 -3.79937,18.7102 -3.60864,39.49456 0.19073,20.78437 5.5132,24.18037 5.5132,45.47556 2e-5,37.82245 -33.65647,48.18204 -68.83147,48.18202 -35.17498,10e-6 -68.86487,-10.35958 -68.86488,-48.18202 -3e-5,-21.29517 5.3559,-24.69118 5.54661,-45.47555 0.19073,-20.78436 -3.64205,-39.49458 -3.64205,-39.49456 z m 52.45893,152.8326 c 2.50413,2.43695 4.69625,4.95808 6.18147,7.85213 0.0436,0.085 0.0579,0.18169 0.10024,0.2673 0.96771,2.2735 1.57838,4.7349 1.90456,7.35094 l 0,164.66092 c -4.87505,6.46255 -11.19086,10.18624 -18.21027,12.29611 -13.39035,2.83339 -30.40613,1.31323 -39.86211,2.20528 -0.0109,-1.8e-4 -0.0225,1.7e-4 -0.0334,0 1e-5,0 -0.30072,2.7733 -0.30072,2.7733 2e-5,0 129.34302,0 129.34302,0 -1e-5,0 -0.30072,-2.7733 -0.30072,-2.7733 -0.0109,1.7e-4 -0.0225,-1.8e-4 -0.0334,0 -9.45597,-0.89205 -26.47176,0.62811 -39.8621,-2.20528 -7.01942,-2.10987 -13.33524,-5.83356 -18.21027,-12.29611 l 0,-164.66092 c 0.32617,-2.61604 0.93683,-5.07744 1.90456,-7.35094 0.0364,-0.0856 0.0628,-0.18227 0.10024,-0.2673 1.48521,-2.89405 3.67733,-5.41519 6.18147,-7.85213 -4.7948,0.60384 -9.61991,1.06363 -14.43457,1.13606 -0.0111,-1.6e-4 -0.0223,1.7e-4 -0.0334,0 -4.81466,-0.0724 -9.63977,-0.53221 -14.43456,-1.13606 z"
+       id="path4916" />
+  </g>
+</svg>

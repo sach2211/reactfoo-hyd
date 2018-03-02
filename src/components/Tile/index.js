@@ -1,7 +1,8 @@
 import React, { Component, PureComponent } from 'react';
+import { Analyser } from '../../Analyser';
+
 import './tile.css';
 import tshirt from '../../tshirt.svg';
-import { Analyser } from '../../Analyser';
 
 class ProductTile extends Analyser {
 

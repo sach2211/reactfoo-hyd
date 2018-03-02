@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 
-// logos
-import logo from './logo.svg';
-import cart from './cart.png';
-
 // stylesheet
 import './App.css';
 
 // components
 import ProductTile from './components/Tile';
+import Cart from './components/Cart';
 
 
 class App extends Component {
@@ -27,13 +24,22 @@ class App extends Component {
     console.log("Adding to shortlist ", x);
     let newShortList = [];
     if (this.cartMap.get(x)) {
-      // already in cart, remove it.
-      this.state.shortlisted.map((i) => { i !== x ? newShortList.push(i) : null });
+      // already in cart, ignore
+      return;
     } else {
       this.cartMap.set(x, true);
       this.state.shortlisted.map((i) => newShortList.push(i));
       newShortList.push(x);
     }
+    this.setState({ shortlisted: newShortList });
+  }
+
+  removeItemFromShortlist = (x) => {
+    this.cartMap.set(x, false);
+    let newShortList = [];
+    this.state.shortlisted.map((i) => {
+      i !== x ? newShortList.push(i) : null 
+    });
     this.setState({ shortlisted: newShortList });
   }
 
@@ -59,16 +65,9 @@ class App extends Component {
         </div>
 
         {/* ShortListed Container */}
-        <div className="shortlistContainer">
-          <img src={cart} className="cartImage" />
-          <div className="cartHeading"> Shopping Cart </div>
-          {
-            this.state.shortlisted.map((p, index) => {
-              return <div key={index} className={"shortlistProduct"}> Product {p} </div>
-            })
-          }
-        </div>
-
+        <Cart 
+          removeItemFromShortlist={this.removeItemFromShortlist}
+          shortlisted={this.state.shortlisted}/>
       </div>
     );
   }

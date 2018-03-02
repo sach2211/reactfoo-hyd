@@ -1,0 +1,36 @@
+.shortlistContainer {
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  width: 20%;
+  background-color: aliceblue;
+  font-size: large;
+  border: 2px solid black;
+}
+
+.shortlistProduct {
+  padding: 10px;
+  border-top: 1px dashed black;
+}
+
+.cartImage {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.cartHeading {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.leftAlign {
+  display: inline-block;
+  text-align: left;
+}
+
+.rightAlign {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}

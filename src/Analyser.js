@@ -1,18 +1,7 @@
-import {React, Component} from 'react';
-
-export let detectRerenders = (component) => {
-  return class detectRerenders extends component {
-    shouldComponentUpdate() {
-      console.log("From SCU of HOC");
-    }
-    render() {
-      return super.render();
-    }
-  }
-}
+import {React, Component, PureComponent} from 'react';
 
 export class Analyser extends Component {
-  areObjectsEqual(a, b)  {
+  shallowCompare(a, b)  {
     let k1 = Object.keys(a);
     let k2 = Object.keys(b);
     if (k1.length !== k2.length)
@@ -30,14 +19,13 @@ export class Analyser extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    if (this.areObjectsEqual(nextProps, this.props)) {
-      // console.log("Wasted Rerender in ", nextProps, this.props, this.props.keywords !== nextProps.keywords);
-      // return false;
+    if (this.shallowCompare(nextProps, this.props)) {
+      // console.log("Wasted Rerender in ", nextProps, this.props);
+      return false;
     } else {
-      // console.log("Not a Wasted Rerender in ",nextProps, this.props);
-      // return true;
+      return true;
     }
-    return true;
+    // return true;
   }
 
 }

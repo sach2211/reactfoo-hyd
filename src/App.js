@@ -58,6 +58,7 @@ class App extends Component {
               <ProductTile 
                 index={index}
                 addToShortlist = {this.addToShortlist}
+                keywords={['tshirts', 'react-foo']}
                 />
               )
           })

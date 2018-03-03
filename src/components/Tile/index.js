@@ -41,6 +41,12 @@ class ProductTile extends Analyser {
       <img src={tshirt}  className="tshirts"/>
         <div className="extraPadding">Product  {this.props.index}</div>
         <button className="extraPadding" onClick={ this.addToCartClick }> Add to Cart </button>
+        <div className="keywords">
+        {
+          this.props.keywords.map(word => (
+            `#${word} `
+          ))
+        } </div>
       </div>
     );
   }

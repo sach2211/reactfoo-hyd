@@ -4,7 +4,7 @@ import { Analyser } from '../../Analyser';
 import cart from '../../cart.png';
 import './cart.css';
 
-export default class Cart extends Component {
+export default class Cart extends Analyser {
 
   handleCrossClick = (p) => {
     this.props.removeItemFromShortlist(p);

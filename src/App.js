@@ -18,9 +18,10 @@ class App extends Component {
       shortlisted: []
     };
     this.cartMap = new Map();
+    this.keywords = ['tshirts', 'react-foo'];
   }
 
-  addToShortlist (x) {
+  addToShortlist = (x) => {
     console.log("Adding to shortlist ", x);
     let newShortList = [];
     if (this.cartMap.get(x)) {
@@ -57,8 +58,8 @@ class App extends Component {
             return (
               <ProductTile 
                 index={index}
-                addToShortlist = {(p) => this.addToShortlist(p)}
-                keywords={['tshirts', 'react-foo']}
+                addToShortlist = {this.addToShortlist}
+                keywords={this.keywords}
                 />
               )
           })

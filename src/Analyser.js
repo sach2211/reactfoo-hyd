@@ -8,23 +8,25 @@ export class Analyser extends Component {
       return false;
     
     let areEqual = true;
+    let keyNames = [];
     for (let i = 0; i < k1.length; i++) {
       if (a[k1[i]] !== b[k2[i]]) {
         areEqual = false;
-        break;
+        keyNames.push(k1[i]);
+        // break;
       }
     }
 
-    return areEqual;
+    return {areEqual, keyNames};
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    if (this.shallowCompare(nextProps, this.props)) {
+    let {areEqual, keyNames} = this.shallowCompare(nextProps, this.props);
+    if (areEqual) {
       return false;
     }
+    console.log('Props that do not match - ', keyNames);
     return true;
   }
 
 }
-
-

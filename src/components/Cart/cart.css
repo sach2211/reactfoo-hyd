@@ -6,6 +6,8 @@
   background-color: aliceblue;
   font-size: large;
   border: 2px solid black;
+  max-height: 80%;
+  overflow: auto;
 }
 
 .shortlistProduct {

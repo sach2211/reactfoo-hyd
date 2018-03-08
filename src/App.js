@@ -21,6 +21,14 @@ class App extends Component {
     this.keywords = ['tshirts', 'react-foo'];
   }
 
+  componentDidMount() {
+    for (let i = 0; i < 100; i = i + 2){
+      setTimeout((i) => {
+        this.addToShortlist(i);
+      },100, i);
+    }
+  }
+
   addToShortlist = (x) => {
     console.log("Adding to shortlist ", x);
     let newShortList = [];
@@ -29,7 +37,7 @@ class App extends Component {
       return;
     } else {
       this.cartMap.set(x, true);
-      this.state.shortlisted.map((i) => newShortList.push(i));
+      newShortList = this.state.shortlisted.splice(0);
       newShortList.push(x);
     }
     this.setState({ shortlisted: newShortList });

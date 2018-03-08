@@ -7,24 +7,31 @@ import './cart.css';
 export default class Cart extends Analyser {
 
   handleCrossClick = (p) => {
+    console.log("Removing p from shortlist", p);
     this.props.removeItemFromShortlist(p);
   }
 
   render() {
     return (
       <div className="shortlistContainer">
-      <img src={cart} className="cartImage" />
-      <div className="cartHeading"> Shopping Cart </div>
-      {
-        this.props.shortlisted.map((p, index) => {
-          return (
-          <div className={"shortlistProduct"} key={index}>
-            <div className={"leftAlign"}> Product {p} </div>
-            <div className={"rightAlign"} onClick={() => this.handleCrossClick(p)}> X </div>
-          </div>
+        <img src={cart} className="cartImage" />
+        <div className="cartHeading"> Shopping Cart </div>
+        {
+          this.props.shortlisted.map((p, index) => 
+            <CartRow key={index} pid={p} crossClick={this.handleCrossClick} />
           )
-        })
-      }
+        }
+      </div>
+    );
+  }
+}
+
+class CartRow extends Analyser {
+  render() {
+    return (
+      <div className={"shortlistProduct"} >
+        <div className={"leftAlign"}> Product {this.props.pid} </div>
+        <div className={"rightAlign"} onClick={() => this.props.crossClick(this.props.pid)}> X </div>
       </div>
     );
   }

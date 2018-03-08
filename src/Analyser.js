@@ -20,10 +20,7 @@ export class Analyser extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     if (this.shallowCompare(nextProps, this.props)) {
-      // console.log("Wasted Rerender in ", nextProps, this.props);
-      // return false;
-    } else {
-      // return true;
+      return false;
     }
     return true;
   }

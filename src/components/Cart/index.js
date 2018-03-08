@@ -18,7 +18,7 @@ export default class Cart extends Analyser {
         <div className="cartHeading"> Shopping Cart </div>
         {
           this.props.shortlisted.map((p, index) => 
-            <CartRow key={index} pid={p} crossClick={this.handleCrossClick} />
+            <CartRow key={p} pid={p} crossClick={this.handleCrossClick} />
           )
         }
       </div>
